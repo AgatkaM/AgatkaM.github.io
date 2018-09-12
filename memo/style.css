@@ -1,0 +1,248 @@
+body
+{
+	background-color: #2e2e2e;
+}
+
+header
+{
+	width:780px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #14CC81;
+	text-align: center;
+	font-size: 30px;
+	margin-top:60px;
+	margin-bottom: 30px;
+}
+
+#container
+{
+	width: 780px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#plansza
+{
+	width: 600px;
+	float: left;
+}
+
+#panel
+{
+	width: 160px;
+	float: left;
+	margin-left: 20px;
+}
+
+.pole
+{
+	float: left;
+	width: 140px;
+	height: 140px;
+	border: 5px dotted #FF7300;
+}
+
+.polein
+{
+	width: 140px;
+	opacity: 0;
+	cursor: pointer;
+}
+
+#licznik
+{
+	width: 150px;
+	height: 100px;
+	border: 5px solid #14CC81;
+	border-radius: 10px;
+	margin-top: 150px;
+	font-size: 25px;
+	color: #cccccc;
+	text-align: center;
+}
+
+.reset
+{
+	width: 150px;
+	height: 90px;
+	border: 5px solid #14CC81;
+	border-radius: 10px;
+	margin-top: 70px;
+	padding-top: 10px;
+	font-size: 32px;
+	text-align: center;
+	color: #cccccc;
+}
+
+.reset:hover
+{
+	/*background-color: #FF7300;*/
+	color: #FF7300;
+	cursor: pointer;
+}
+
+#usuwanie
+{
+	background-color: #14CC81;
+	width: 140px;
+	height: 140px;
+}
+
+#napis
+{
+	width: 300px;
+	height: 300px;
+	font-size: 70px;
+	color: #14CC81;
+	text-align: center;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer
+{
+	margin-top: 20px;
+	width: 600px;
+	font-size: 15px;
+	color: #bbbbbb;
+	text-align: center;
+}
+
+#footer a
+{
+	color: #14CC81;
+}
+
+#footer a:hover
+{
+	color: #14CC81;
+	cursor: pointer;
+}
+
+#footer a:visited
+{
+	color: #14CC81;
+}
+
+.poczatek
+{
+	width: 300px;
+	font-size: 50px;
+	color: #14CC81;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#szesn
+{
+	width: 250px;
+	height: 50px;
+	font-size: 40px;
+	color: #14CC81;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #FF7300;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+#szesn:hover
+{
+	color: #cccccc;
+}
+
+#dwad
+{
+	width: 250px;
+	height: 50px;
+	font-size: 40px;
+	color: #14CC81;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #FF7300;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+#dwad:hover
+{
+	color: #cccccc;
+}
+
+.pole24
+{
+	float: left;
+	width: 90px;
+	height: 90px;
+	border: 5px dotted #FF7300;
+}
+
+.polein24
+{
+	width: 90px;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.pole24:nth-child(1),.pole24:nth-child(2),.pole24:nth-child(3),.pole24:nth-child(4),.pole24:nth-child(5),.pole24:nth-child(6)
+{
+	margin-top: 40px;
+}
+
+#usuwanie2
+{
+	background-color: #14CC81;
+	width: 90px;
+	height: 90px;
+}
+
+#trzyd
+{
+	width: 250px;
+	height: 50px;
+	font-size: 40px;
+	color: #14CC81;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #FF7300;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+#trzyd:hover
+{
+	color: #cccccc;
+}
+
+.pole36
+{
+	float: left;
+	width: 90px;
+	height: 90px;
+	border: 5px dotted #FF7300;
+}
+
+.polein36
+{
+	width: 90px;
+	opacity: 0;
+	cursor: pointer;
+}
+
+#usuwanie3
+{
+	background-color: #14CC81;
+	width: 90px;
+	height: 90px;
+}

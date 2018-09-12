@@ -1,0 +1,55 @@
+body
+{
+	background-color: #2e2e2e;
+}
+
+#container
+{
+	width: 500px;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+
+.tile
+{
+	width: 50px;
+	height: 40px;
+	border: 2px solid #004372;
+	float: left;
+	text-align: center;
+	line-height: 100%;
+	font-size: 30px;
+	color: #004372;
+	padding-top: 10px;
+}
+
+.tile:hover
+{
+	cursor:pointer;
+}
+
+img
+{
+	margin-left: 3px;
+	margin-top: 0px;
+	/*display: none;*/
+}
+
+#title
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	line-height: 100%;
+	font-size: 50px;
+	color: #004372;
+}
+
+footer
+{
+	font-size: 15px;
+	color: #004372;
+	text-align: right;
+}

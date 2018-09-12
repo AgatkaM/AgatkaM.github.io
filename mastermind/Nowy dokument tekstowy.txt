@@ -1,0 +1,116 @@
+window.onload=start;
+
+
+function start()
+{
+	var tresc_diva="";
+
+	for(i=1;i<=6;i++)
+	{
+		for(j=1;j<=4;j++)
+	{
+		var element="pole"+i+"."+j+"";
+
+		tresc_diva=tresc_diva+'<div class="pole" onclick="decyzja('+i+"."+j+')" id="'+element+'"></div>';
+
+			
+	}
+		tresc_diva=tresc_diva+'<div style="clear:both"></div>';	
+
+	}
+
+	document.getElementById("granie").innerHTML=tresc_diva;
+
+	for(i=1;i<=6;i++)
+	{
+		for(j=1;j<=4;j++)
+		{
+			var element="pole"+i+"."+j+"";
+			var elementin='<div class="polein">'+i+'</div>';
+			document.getElementById(element).innerHTML=elementin;
+		}
+	}
+
+
+	kolorki();
+	obrazki_wynikow();
+
+
+}
+
+function kolorki()
+{
+	var tresc_panelu="";
+
+	for(i=0;i<6;i++)
+	{
+		var kol="kolor"+i;
+
+		tresc_panelu=tresc_panelu+'<div class="kolor" onclick="klik('+i+')" id="'+kol+'"></div>';
+	}
+
+
+	document.getElementById("kolory").innerHTML=tresc_panelu;
+}
+
+function obrazki_wynikow()
+{
+	var tresc_wynikow="";
+
+	for(i=0;i<6;i++)
+	{
+		for(j=0;j<4;j++)
+		{
+			var elwyn="polewyn"+i+"a"+j;
+
+			tresc_wynikow=tresc_wynikow+'<div class="polewyn" id="'+elwyn+'"></div>';
+			if((j+1)%2==0)tresc_wynikow=tresc_wynikow+'<div style="clear:both"></div>';
+		}
+		tresc_wynikow=tresc_wynikow+'<div style="clear:both;margin-top:15px"></div>';
+	}
+
+	document.getElementById("wyniki").innerHTML=tresc_wynikow;
+}
+
+var v=false;
+
+var tabela_kolorow=new Array(6);
+
+tabela_kolorow[0]="#25A11B";
+tabela_kolorow[1]="#FF1000";
+tabela_kolorow[2]="#1A1DFF";
+tabela_kolorow[3]="#FFD51A";
+tabela_kolorow[4]="#A11A84";
+tabela_kolorow[5]="#FE6500";
+
+
+function klik(numer_koloru)
+{
+	var element="pole"+temp_nr;
+
+	var pusty='<div id="pusty"></div>';
+
+	if(v==true)
+	{
+	v=false;
+
+	document.getElementById(element).style.background=tabela_kolorow[numer_koloru];
+	document.getElementById(element).innerHTML=pusty;
+
+	}
+
+	else
+	{
+		document.getElementById("kolor"+numer_koloru).setAttribute("onclick",";");
+		v=false;
+	}
+}
+
+var tymczasowa;
+
+function decyzja(numer_pola)
+{
+	v=true;
+	temp_nr=numer_pola;
+	
+}

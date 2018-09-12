@@ -1,0 +1,183 @@
+body
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #3d3d3d;
+    -webkit-font-family: 'Poiret One', cursive;
+    -ms-font: 'Poiret One', cursive;
+    font-family: 'Poiret One', cursive;
+    color:#5577A7;
+    font-size: 28px;
+    scroll-behavior: smooth;
+}
+
+header
+{
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+}
+
+header h1
+{
+	text-align: center;
+	font-size: 70px;
+	color:#7799C9;
+}
+
+header a
+{
+	text-decoration: none;
+}
+
+nav
+{
+	text-align:center;
+}
+
+.menu
+{
+	list-style-type: none;
+	padding:10px;
+	font-size: 32px;
+	line-height: 200%;
+}
+
+.menu>li 
+{
+	display:inline-block;
+	padding-left: 30px;
+	padding-right:30px;
+	border:2px dotted #5D7596;
+	text-decoration: none;
+	color:#5577A7;
+
+}
+
+.menu>li:hover
+{
+	cursor: pointer;
+}
+
+#umie 
+{
+	height: 520px;
+}
+
+#wyksz
+{
+	height: 580px;
+}
+
+h2
+{
+	font-size: 40px;
+	text-align: left;
+	padding-left: 60px;
+	padding-top:20px;
+	padding-bottom: 10px;
+	width: 300px;
+	color:#6699C9;
+}
+
+table
+{
+	padding-left: 200px;
+}
+
+#wyksz table tr:nth-child(odd)
+{
+	color:#7799c9;
+}
+
+#wyksz table td
+{
+	width: 280px;
+	line-height: 150%;
+}
+
+#umie ul
+{
+	line-height: 150%;
+	margin-left: 50px;
+	margin-right: 60px;
+}
+
+#umie ul>li
+{
+	padding-left: 20px;
+}
+
+#proj
+{
+	height: 650px;
+}
+
+#kon 
+{
+	height: 300px;
+}
+
+#kon table td
+{
+	min-width: 150px;
+	line-height: 150%;
+	font-size: 30px;
+	color:#7799c9;
+}
+
+footer
+{
+	margin-top:20px;
+	font-size:15px;
+	text-align: center;
+	padding:20px;
+	border-top: 2px dotted #4E6485;
+}
+
+footer #copy
+{
+	margin-top: 10px;
+	text-align: right;
+}
+
+img
+{
+	width: 250px;
+	height: 250px;
+	border-radius: 8px;
+	transition: all 0.2s ease-in-out;
+	filter: grayscale(70%);
+	opacity:0.8;
+}
+
+img:hover
+{
+	cursor: pointer;
+	transform:scale(0.9);
+}
+
+#proj table
+{
+	padding-left: 0px;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+#proj table td
+{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.up
+{
+	font-size: 80px;
+	text-decoration: none;
+	color: #7799c9;
+	position:fixed;
+	right:80px;
+	bottom:100px;
+}
