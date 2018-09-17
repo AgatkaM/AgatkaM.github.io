@@ -32,14 +32,12 @@ imie[11]="Stefan";
 
 function start()
 {
-	$(".container").fadeIn(2000);
 	
 	var tresc_diva='<p id="secp">Witaj na stronie Wielcy Matematycy, na której poznasz biografie najbardziej cenionych przeze mnie mistrzów królowej nauk. Rozwój matematyki nie byłby możliwy bez ciężkiej pracy i poświęceń setek jej adeptów. Nie sposób wszystkich ich przedstawić i każdego wyróżnić. Wiele nazwisk zostało już zapomnianych, niektóre osiągnięcia przypisane innym uczonym. Jednak wysiłek żadnego z nich nie poszedł na marne. Poprzez moją stronę pragnę oddać hołd wszystkim, dzięki którym możemy choć trochę, po ludzku poznać alfabet, zgodnie z którym napisany został wszechświat. </p>';
 	tresc_diva=tresc_diva+'<h3 onclick="start1()">PRzejdź dalej</h3>';
 	/*document.getElementById("sec").style.display="block";*/
 
 	document.getElementById("sec").innerHTML=tresc_diva;
-	$("#secp").fadeIn(1200);
 
 
 
@@ -47,7 +45,7 @@ function start()
 
 function start1()
 {
-	$('#sec').fadeOut(300);
+	document.getElementById("sec").style.display="none";
 	var tresc_diva="";
 
 	for(i=0;i<12;i++)
@@ -61,10 +59,11 @@ function start1()
 
 	}
 
-	$('#ramka').fadeIn(1000);
-	document.getElementById("ramka").innerHTML=tresc_diva;
+	
+	document.getElementById("ramka").style.display="block";
+	document.getElementById("ramka").innerHTML=tresc_diva;	
 
-
+	
 }
 
 
@@ -83,7 +82,7 @@ function przejdz(nr)
 	var sekcja="";
 	var tresc='<article class="tekst"><img src="img/'+nazwisko[nr]+'.jpg" /><h2>'+imie[nr]+' <em>'+nazwisko[nr]+'</em></h2><div style="clear:both"><p>'+strona[nr]+'</p></article><aside id="aside"></aside><div style="clear:both"></div>';
 
-	tresc=tresc+'<div id="x" onclick=$("#pole").fadeOut(300) onmouseover=document.getElementById("x").style.cursor="pointer">x</div>';
+	tresc=tresc+'<div id="x" onclick=document.getElementById("pole").style.display="none" onmouseover=document.getElementById("x").style.cursor="pointer">x</div>';
 	
 	if(nr!=11)
 	{
@@ -95,9 +94,9 @@ function przejdz(nr)
 		tresc=tresc+'<div id="left" onclick="przejdz('+(nr-1)+')" onmouseover=document.getElementById("left").style.cursor="pointer">&#8656;</div>';
 	}
 
-	$("#pole").fadeIn(300);
-
 	document.getElementById("pole").innerHTML=tresc;
+
+	document.getElementById("pole").style.display="block";
 
 }
 
