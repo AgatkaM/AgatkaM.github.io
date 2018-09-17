@@ -3,11 +3,11 @@ body
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #3d3d3d;
+	background-color: #3f3f3f;
     -webkit-font-family: 'Poiret One', cursive;
     -ms-font: 'Poiret One', cursive;
     font-family: 'Poiret One', cursive;
-    color:#5577A7;
+	color:#5AA1FF;
     font-size: 28px;
     scroll-behavior: smooth;
 }
@@ -24,7 +24,7 @@ header h1
 {
 	text-align: center;
 	font-size: 70px;
-	color:#7799C9;
+	color:#5AA1FF;
 }
 
 header a
@@ -52,7 +52,7 @@ nav
 	padding-right:30px;
 	border:2px dotted #5D7596;
 	text-decoration: none;
-	color:#5577A7;
+	color:#5AA1FF;
 
 }
 
@@ -79,7 +79,7 @@ h2
 	padding-top:20px;
 	padding-bottom: 10px;
 	width: 300px;
-	color:#6699C9;
+	color:#5AA1FF;
 }
 
 table
@@ -87,10 +87,10 @@ table
 	padding-left: 200px;
 }
 
-#wyksz table tr:nth-child(odd)
+/*#wyksz table tr:nth-child(even)
 {
-	color:#7799c9;
-}
+	color:#5577a7;
+}*/
 
 #wyksz table td
 {
@@ -125,7 +125,6 @@ table
 	min-width: 150px;
 	line-height: 150%;
 	font-size: 30px;
-	color:#7799c9;
 }
 
 footer
